@@ -1,0 +1,12 @@
+{
+  "name": "porfolio-blog",
+  "displayName": "porfolio-blog",
+  "expo": {
+    "name": "porfolio-blog",
+    "slug": "porfolio-blog",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
