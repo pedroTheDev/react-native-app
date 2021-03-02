@@ -7,12 +7,16 @@ export default function Buttons() {
   return (
     <View style={styles.OutterContainer}>
       <View >
-        <TouchableOpacity style={styles.container} >
+        <TouchableOpacity
+        onPress={() => alert('This button should direct to Planos Screen')}
+        style={styles.container} >
           <Text style={styles.text}>Planos</Text>
         </TouchableOpacity>
       </View>
       <View >
-        <TouchableOpacity style={styles.containerPressed} >
+        <TouchableOpacity 
+        onPress={() => alert('This button should direct to the Características Screen')}
+        style={styles.containerPressed} >
           <Text style={styles.text}>Características</Text>
         </TouchableOpacity>
       </View>

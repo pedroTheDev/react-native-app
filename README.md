@@ -1,3 +1,12 @@
+
+<p align="center">
+  <img alt="react-native-hi" src="../../assets/splash.png" width="208">
+</p>
+
+
+Bem vindo ao app Plan$
+
+
 Teste para desenvolvedor Front-End 4yousee.
 
 
