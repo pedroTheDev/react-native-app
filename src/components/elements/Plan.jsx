@@ -55,12 +55,7 @@ const styles = StyleSheet.create({
     margin: 20,
     height: '80%',
   },
-  titleText:{
-    margin:15,
-    height: '1rem',
-    fontSize:20,
-    fontWeight:'bold',
-  },
+
   content:{
     display: 'grid',
     gridTemplateColumns: 'auto auto',
@@ -69,6 +64,7 @@ const styles = StyleSheet.create({
     padding:0,
     alignItems: 'center',
   },
+
   itens:{
     border: '1px solid #dedede',
     margin:0,
@@ -78,6 +74,7 @@ const styles = StyleSheet.create({
     paddingTop:8,
     paddingLeft: 8,
   },
+
   itensNumber:{
     border: '1px solid #dedede',
     margin:0,
@@ -87,6 +84,14 @@ const styles = StyleSheet.create({
     color:'#5396ed',
     paddingTop:8,
   },
+
+  titleText:{
+    margin:15,
+    height: '1rem',
+    fontSize:20,
+    fontWeight:'bold',
+  },
+ 
   obs: {
     margin:10,
     fontSize:11,

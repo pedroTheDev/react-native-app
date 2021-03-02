@@ -2,7 +2,6 @@
   "Aparelho" : {
     "name": "Samsung Galaxy S8" 
   },
-
   "plans":[  
     {  
         "id":1,

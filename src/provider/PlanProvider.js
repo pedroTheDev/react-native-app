@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React, { useState } from 'react'
+import { StyleSheet } from 'react-native'
 import data from '../components/services/data';
 import PlanContext from '../context/PlanContext'
 

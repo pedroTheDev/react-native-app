@@ -1,7 +1,6 @@
-import React, {useState, useEffect, useContext} from 'react'
-import { ActivityIndicator, StyleSheet, Text, View } from 'react-native'
-import { FlatList, TouchableOpacity } from 'react-native-gesture-handler'
-
+import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
+import { TouchableOpacity } from 'react-native-gesture-handler'
 
 export default function Buttons() {
  
