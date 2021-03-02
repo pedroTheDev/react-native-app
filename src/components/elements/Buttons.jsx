@@ -1,22 +1,21 @@
 import React, {useState, useEffect, useContext} from 'react'
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native'
 import { FlatList, TouchableOpacity } from 'react-native-gesture-handler'
-import PlanContext from '../../context/PlanContext'
 
 
 export default function Buttons() {
-  const { info, isLoading } = useContext(PlanContext);
+ 
  
   
   return (
     <View style={styles.OutterContainer}>
-      <View style={styles.container}>
-        <TouchableOpacity >
+      <View >
+        <TouchableOpacity style={styles.container} >
           <Text style={styles.text}>Planos</Text>
         </TouchableOpacity>
       </View>
-      <View style={styles.container}>
-        <TouchableOpacity >
+      <View >
+        <TouchableOpacity style={styles.containerPressed} >
           <Text style={styles.text}>Características</Text>
         </TouchableOpacity>
       </View>
@@ -28,8 +27,17 @@ const styles = StyleSheet.create({
   container:{
     display:'flex',
     backgroundColor: '#068004',
-    margin: 10,
-    padding:20,
+    margin: 5,
+    padding:15,
+    width:150,
+    borderRadius:10,
+    alignItems: 'center'
+  },
+  containerPressed:{
+    display:'flex',
+    backgroundColor: '#7d7f82',
+    margin: 5,
+    padding:15,
     width:150,
     borderRadius:10,
     alignItems: 'center'
@@ -37,7 +45,7 @@ const styles = StyleSheet.create({
 
   OutterContainer:{
     display:'flex',
-    margin: 10,
+    margin: 5,
     flexDirection:'row',
     justifyContent:'space-around'
   },

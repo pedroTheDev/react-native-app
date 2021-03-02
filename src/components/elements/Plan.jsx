@@ -39,12 +39,12 @@ export default function Plan() {
         </View>
       </View>
       )}
-      <Text>
+      <Text style={styles.obs}>
         Oferta sujeita a permanência mínima de 12 meses. Consulte
         regulamento e periodo de fidelização. Parcelamento em até
         12 vezes sem juros, válido para pagamento com cartão de
         crédito. Chip (R$12,00) não incluso no valor do aparelho.
-        Oferta sujeita à análise de crédito.
+        Oferta sujeita à análise de crédito.<br/>
         *Valor do aparelho avulso.
       </Text>
     </View>
@@ -55,7 +55,9 @@ const styles = StyleSheet.create({
   container:{
     backgroundColor:'#dedede',
     borderRadius: 5,
-    margin:20,
+    marginTop: 5,
+    margin: 20,
+    height: '80%',
   },
   titleText:{
     margin:15,
@@ -88,7 +90,14 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color:'#5396ed',
     paddingTop:8,
-    
+  },
+  obs: {
+    margin:10,
+    fontSize:11,
+    textAlign:'justify',
+
+
+
   },
 
 })
