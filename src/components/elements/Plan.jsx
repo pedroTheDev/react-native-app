@@ -29,13 +29,13 @@ export default function Plan() {
       {newData.map((element) =>
       <View>
         <Text style={styles.titleText}>{element.name}</Text>
-        <View>
-          <Text>Pós Pago - À vista</Text>
-          <Text>{element.phonePrice}</Text>
-          <Text>Mensalidade total do Plano</Text>
-          <Text>{element.monthly_fee}</Text>
-          <Text>Pre Pago* - À vista</Text>
-          <Text>{element.phonePriceOnPlan}</Text>
+        <View style={styles.content}>
+          <Text style={styles.itens}>Pós Pago - À vista</Text>
+          <Text style={styles.itens}>{element.phonePrice}</Text>
+          <Text style={styles.itens}>Mensalidade total do Plano</Text>
+          <Text style={styles.itens}>{element.monthly_fee}</Text>
+          <Text style={styles.itens}>Pre Pago* - À vista</Text>
+          <Text style={styles.itens}>{element.phonePriceOnPlan}</Text>
         </View>
       </View>
       )}
@@ -46,14 +46,25 @@ export default function Plan() {
 const styles = StyleSheet.create({
   container:{
     backgroundColor:'#dedede',
-    margin:30,
-    height: '20rem',
+    margin:20,
   },
   titleText:{
     margin:15,
     height: '1rem',
     fontSize:18,
     fontWeight:'bold',
+  },
+  content:{
+    display: 'grid',
+    gridTemplateColumns: 'auto auto',
+    backgroundColor:'#fff',
+    margin:10,
+    padding:0,
+  },
+  itens:{
+    border: '1px solid #dedede',
+    margin:0,
+    fontSize:15,
   },
 
 })
