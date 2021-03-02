@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img alt="react-native-hi" src="../../assets/splash.png" width="208">
+  <img alt="react-native-plans" src="../../assets/splash.png" width="208">
 </p>
 
 
