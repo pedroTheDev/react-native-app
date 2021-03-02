@@ -7,7 +7,6 @@ import PlanProvider from './src/provider/PlanProvider';
 
 export default function App() {
 
-  
   return (
     <PlanProvider>
       <MainPage />
@@ -23,8 +22,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-
-// como fazer apk
-
-//doc expo apk
 

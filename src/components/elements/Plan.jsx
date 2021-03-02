@@ -5,12 +5,12 @@ import PlanContext from '../../context/PlanContext';
 export default function Plan() {
 
     const{ info } = useContext(PlanContext);
+    const today = new Date()
+    const obj={};
 
     function dateFormatter(date){
       return new Date(date) < today;
     }
-    const today = new Date()
-    const obj={};
 
     const newData = info.plans.filter((element) => dateFormatter(element.schedule.startDate))
                               .sort((a, b) => ((new Date(b.schedule.startDate)) - (new Date(a.schedule.startDate))))
@@ -24,7 +24,7 @@ export default function Plan() {
     <View style={styles.container}>
       {newData.map((element) =>
       <View>
-        <Text style={styles.titleText}>{element.name}</Text>
+        <Text style={styles.titleText}>{`Plano ${element.name}`}</Text>
         <View style={styles.content}>
           <Text style={styles.itens}>Pós Pago - À vista</Text>
           <Text style={styles.itensNumber}>{`R$${element.phonePrice.toFixed(2)}`}</Text>
