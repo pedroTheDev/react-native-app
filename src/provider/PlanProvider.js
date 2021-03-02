@@ -6,7 +6,6 @@ import PlanContext from '../context/PlanContext'
 export default function PlanProvider({ children }) {
   const [info, setInfo] = useState(data);
   const [isLoading, setLoading] = useState(true);
-  console.log(info)
 
   const values={
     info,

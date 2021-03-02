@@ -5,7 +5,6 @@ import PlanContext from '../../context/PlanContext';
 export default function Plan() {
 
     const{ info } = useContext(PlanContext);
-    console.log(info)
 
     function dateFormatter(date){
       return new Date(date) < today;
@@ -20,10 +19,7 @@ export default function Plan() {
                                 let exists = obj.hasOwnProperty(item.name)
                                 return exists ? false : obj[item.name] = 1
                               })
-    console.log((newData))
 
-    
-  
   return (
     <View style={styles.container}>
       {newData.map((element) =>
@@ -95,16 +91,7 @@ const styles = StyleSheet.create({
     margin:10,
     fontSize:11,
     textAlign:'justify',
-
-
-
+    color:'gray',
   },
 
-})
-
-
-//"name":"Controle 2GB",
-    //"phonePrice":2899,
-    //"phonePriceOnPlan":2229,
-    //"installments":12,
-    //"monthly_fee":44,
+});

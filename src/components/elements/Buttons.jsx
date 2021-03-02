@@ -5,8 +5,6 @@ import { FlatList, TouchableOpacity } from 'react-native-gesture-handler'
 
 export default function Buttons() {
  
- 
-  
   return (
     <View style={styles.OutterContainer}>
       <View >
