@@ -1,0 +1,23 @@
+import React, { useState, useEffect } from 'react'
+import { StyleSheet, Text, View } from 'react-native'
+import data from '../components/services/data';
+import PlanContext from '../context/PlanContext'
+
+export default function PlanProvider({ children }) {
+  const [info, setInfo] = useState(data);
+  const [isLoading, setLoading] = useState(true);
+  console.log(info)
+
+  const values={
+    info,
+    isLoading,
+  }
+
+  return (
+    <PlanContext.Provider value= {values}>
+      {children}
+    </PlanContext.Provider>
+  )
+}
+
+const styles = StyleSheet.create({})
