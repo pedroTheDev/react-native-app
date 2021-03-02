@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img alt="react-native-plans" src='react-native-app\src\assets\splash.png' width="208">
+  <img alt="react-native-plans" src='./src/assets/splash.png' width="208">
 </p>
 
 
